@@ -13,8 +13,13 @@ const cli = meow(
         $ deploy.js [options]
 
       Options
-        --pfix, -p        Set the prefix and postfix format (default: "%%" -> "%%name%%")
-        --magic-num, -m   
+        --pfix, -p                Set the prefix and postfix format (default: "%%" -> "%%name%%")
+        --magic-num, -m           Set the magic number indicating a placeholder (default: -99999)
+        --template, -t            Set the template file path
+        --deployment-name, -n     Set the deployment name
+        --deployment-count, -c    Set the number of deployments to create
+        --debug, -d               Enable debug mode
+        --skip-constants, -s      Skip prompting for constants
 
       Examples
         $ foo unicorns --rainbow
